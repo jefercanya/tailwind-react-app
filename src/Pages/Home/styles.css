@@ -1,0 +1,34 @@
+.itemList {
+    display: grid;
+    grid-template-columns: repeat(1, 350px);
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    gap: 2rem;
+    margin: 3rem;
+
+}
+
+.itemList .item {
+    width: 100%;
+    height: 300px;
+    /* background-color: blanchedalmond; */
+}
+
+@media screen and (min-width: 720px) {
+    .itemList {
+        grid-template-columns: repeat(2, 350px);
+    }
+}
+
+@media screen and (min-width: 1240px) {
+    .itemList {
+        grid-template-columns: repeat(3, 350px);
+    }
+}
+
+@media screen and (min-width: 1680px) {
+    .itemList {
+        grid-template-columns: repeat(4, 350px);
+    }
+}
